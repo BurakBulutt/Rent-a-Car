@@ -7,29 +7,20 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
-
 @AllArgsConstructor
-@Table
 @NoArgsConstructor
+@Table
 @Entity
 @Getter
 @Setter
 
-public class Car {
+public class Brand {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-
-    @Column(name = "model_year")
-    private String modelYear;
-
-    @Column(name = "daily_price")
-    private double dailyPrice;
-
-    @Column(name = "description")
-    private String description;
-
+    @Column(name = "brand_name")
+    private String brandName;
 
 }
